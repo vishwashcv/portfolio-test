@@ -292,6 +292,7 @@ body{
 @media only screen and (max-width: 960px) {
     .section{
         padding: 4vh 8vw;
+        min-height: 90vh;
     }
     .f-nav{
         align-items: flex-start;
