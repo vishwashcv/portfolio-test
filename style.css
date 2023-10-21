@@ -152,7 +152,7 @@ body{
     justify-content: space-between;
     text-align: center;
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #161616;
     color: white;
     padding: 6vh 6vw;
@@ -312,17 +312,21 @@ body{
     .social{
         display: none;
     }
+    .center-content{
+        gap: 10px;
+    }
     .title{
-        font-size: 28px;
+        font-size: 1.6rem;
     }
     .sub-title{
-        font-size: 14px;
+        font-size: 0.86rem;
+        margin-bottom: 1.1vh;
     }
     .f-nav{
-        font-size: 16px;
+        font-size: 0.8rem;
     }
     .s-nav{
-        font-size: 16px;
+        font-size: 0.8rem;
         align-items: flex-end;
     }
     /* nav:nth-child(1) > div:nth-last-child(-n+4){
