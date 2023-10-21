@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+    overflow: hidden; }
+  
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  .has-scroll-smooth body {
+    overflow: hidden; }
+  
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%; }
+  
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; }
+    .c-scrollbar:hover {
+      transform: scaleX(1.45); }
+    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+      opacity: 1; }
+    [data-scroll-direction="horizontal"] .c-scrollbar {
+      width: 100%;
+      height: 10px;
+      top: auto;
+      bottom: 0;
+      transform: scaleY(1); }
+      [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+        transform: scaleY(1.3); }
+  
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
+    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+      right: auto;
+      bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    cursor: url(./images/default-cursor.svg), default;
+}
+
+
+.button{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 0.6rem 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 128px;
+    min-height: 38px;
+    max-height: 38px;
+    cursor: pointer;
+    font-size: 12px;
+    user-select: none;
+    transition: 0.24s;
+    cursor: url(./images/pointer-cursor.svg), pointer;
+}
+
+.link{
+    border: 1px solid transparent;
+    border-radius: 120px;
+    transition: 0.2s;
+    padding: 0.6rem 1.6rem;
+}
+
+.link:hover{
+    border: 1px solid white;
+
+}
+
+.button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dadada;
+    
+}
+
+.arrow{
+    padding-left: 4px;
+    font-size: 14px;
+
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    color: white;
+    padding: 6vh 6vw;
+}
+
+
+.f-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    font-size: 18px;
+}
+
+.center-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.title{
+    font-size: 32px;
+}
+
+.sub-title{
+    font-size: 16px;
+    margin-bottom: 0.5vh;
+}
+
+.s-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    font-size: 18px;
+}
+
+
+.social{
+    display: flex;
+    gap: 3.6vw;
+}
+
+
+.social:hover{
+    cursor: url(./images/pointer-cursor.svg), pointer;
+}
+
+.section-two{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12vh 8vw 16vh;
+}
+
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic{
+    border-radius: 480px;
+    width: 21rem;
+    height: 21rem;
+}
+
+.profile-about{
+    font-size: 3.2rem;
+    width: 56vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.profile-about-title{
+    font-size: 30px;
+}
+
+.profile-about-para{
+    font-size: 46px;
+    letter-spacing: -2px;
+}
+
+.profile-sub-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: -1px;
+    font-size: 24px;
+}
+
+.profile-sub-about > div {
+    width: 40vw;
+}
+
+
+.section-three{
+    height: auto;
+    width: 100vw;
+    background-color: #161616;
+}
+
+.preview-img{
+    width: 50vw;
+    transition: 0.2s;
+    
+}
+
+.preview-img:hover{
+    scale: 1.02;
+    filter: brightness(1.2);
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.width-auto{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media only screen and (max-width: 960px) {
+    .section{
+        padding: 4vh 8vw;
+    }
+    .f-nav{
+        align-items: flex-start;
+    }
+    .width-auto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 34px;
+    }
+
+    .width-auto > div:nth-child(-n+3){
+        display: none;
+    }
+    .mobile-button{
+        max-width: 128px;
+    }
+    .social{
+        display: none;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .sub-title{
+        font-size: 14px;
+    }
+    .f-nav{
+        font-size: 16px;
+    }
+    .s-nav{
+        font-size: 16px;
+        align-items: flex-end;
+    }
+    /* nav:nth-child(1) > div:nth-last-child(-n+4){
+        display: flex;
+        flex-direction: column;
+        background-color: #dadada;
+    } */
+    
+    .mobile-flex{
+        display: flex;
+        flex-direction: column;
+    }
+}
