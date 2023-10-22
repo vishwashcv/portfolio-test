@@ -220,6 +220,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: #000000;
 }
 
 .profile-pic{
@@ -253,7 +254,7 @@ body{
     font-size: 24px;
 }
 
-.profile-sub-about > div {
+.profile-sub-about:nth-last-child(-n+1) > div {
     width: 40vw;
 }
 
@@ -337,27 +338,44 @@ body{
     }
     .section-two{
         padding: 0;
-        height: 200vh;
+        height: auto;
+        padding-bottom: 4vh;
     }
     .profile{
         padding: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
+    }
+    .profile-pic{
+        width: 100vw;
+        height: auto;
     }
     .profile-about{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 80vw;
+        align-items: left;
+        margin: 4vh auto 2vh;
+        width: 88vw;
     }
     .profile-about-title{   
+        font-size: 20px;
     }
     .profile-pic{
         width: 100vw;
         border-radius: 0px;
     }
     .profile-about-para{
-        
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+    .profile-sub-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-sub-about:nth-last-child(n) > div {
+        width: 88vw;
+        margin: 2vh auto;
     }
     /* nav:nth-child(1) > div:nth-last-child(-n+4){
         display: flex;
@@ -374,6 +392,10 @@ body{
     }
     .preview-img{
         width: 100vw;
+    }
+    .line{
+        height: 3px;
+        background-color: #161616;
     }
 }
 

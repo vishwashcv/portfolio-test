@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
     <title>Vishwash</title>
 </head>
 
 <body>
     <div class="smoothing" data-scroll-container>
         <div class="section" data-scroll-section>
-            <nav class="f-nav">
+            <nav class="f-nav" data-scroll>
                 <div>Vishwash</div>
                 <div class="flex width-auto">
                     <div>Researcher<br />2022</div>
@@ -25,13 +25,13 @@
                     <div class="button mobile-button">LET'S TALK</div>
                 </div>
             </nav>
-            <div class="center-content" data-scroll="" data-scroll-speed="3">
+            <div class="center-content" data-scroll data-scroll-speed="3">
                 <div class="title">UI / UX Designer</div>
                 <div class="sub-title">Hello, I am Vishwash <br /> Through research I create cool designs</div>
                 <div class="button">SCROLL DOWN TO EXPLORE<div class="arrow">↓</div>
                 </div>
             </div>
-            <nav class="s-nav">
+            <nav class="s-nav" data-scroll>
                 <div>©2022</div>
                 <div>LOCATION<br />N 9.905257 E 78.130842</div>
                 <div class="social">
@@ -42,7 +42,7 @@
             </nav>
         </div>
         <div class="section-two" data-scroll-section>
-            <div class="profile">
+            <div class="profile" data-scroll>
                 <img class="profile-pic" src="./images/profile-pic.png" />
                 <div class="profile-about">
                     <div class="profile-about-title">ABOUT</div>
@@ -50,54 +50,53 @@
                         Marketing, Art Direction and Hardware domains in various industries.</div>
                 </div>
             </div>
-            <div class="profile-sub-about">ncasdfio, aiosdhfuisdhfi, knSDciasofji, jncies I am a Software Engineer,
-                explored Design, Development, Testing, Marketing, Art Direction and Hardware domains in various
-                industries. I am a Software Engineer, explored Design, Development, Testing, Marketing, Art Direction
-                and Hardware domains in various industries. I am a Software Engineer, explored Design, Development,
-                Testing, Marketing, Art Direction and Hardware domains in various industries.</div>
-            <div class="profile-sub-about">
+            <div class="profile-sub-about" data-scroll>
+                <div class="line"></div>
+                <div>ncasdfio, aiosdhfuisdhfi, knSDciasofji, jncies I am a Software Engineer,
+                    explored Design, Development, Testing, Marketing, Art Direction and Hardware domains in various
+                    industries. I am a Software Engineer, explored Design, Development, Testing, Marketing, Art
+                    Direction
+                    and Hardware domains in various industries. I am a Software Engineer, explored Design, Development,
+                    Testing, Marketing, Art Direction and Hardware domains in various industries.</div>
+                <div class="line"></div>
+            </div>
+            <div class="profile-sub-about" data-scroll>
                 <div>I am a Software Engineer, explored Design, Development, Testing, Marketing, Art Direction and
                     Hardware domains in various industries.</div>
+                <div class="line"></div>
                 <div>I am a Software Engineer, explored Design, Development, Testing, Marketing, Art Direction and
                     Hardware domains in various industries.</div>
             </div>
         </div>
         <div class="section-three" data-scroll-section="">
-            <div class="preview-flex">
+            <div class="preview-flex" data-scroll>
                 <div><img class="preview-img" src="./images/1.png" /></div>
                 <div><img class="preview-img" src="./images/2.png" /></div>
             </div>
-            <div class="preview-flex">
+            <div class="preview-flex" data-scroll>
                 <div><img class="preview-img" src="./images/3.png" /></div>
                 <div><img class="preview-img" src="./images/5.png" /></div>
             </div>
-            <div class="preview-flex">
+            <div class="preview-flex" data-scroll>
                 <div><img class="preview-img" src="./images/4.png" /></div>
                 <div><img class="preview-img" src="./images/8.png" /></div>
             </div>
-            <div class="preview-flex">
+            <div class="preview-flex" data-scroll>
                 <div><img class="preview-img" src="./images/16.png" /></div>
                 <div><img class="preview-img" src="./images/7.png" /></div>
             </div>
-            <div class="preview-flex">
+            <div class="preview-flex" data-scroll>
                 <div><img class="preview-img" src="./images/15.png" /></div>
                 <div><img class="preview-img" src="./images/10.png" /></div>
             </div>
-            <div class="preview-flex">
+            <div class="preview-flex" data-scroll>
                 <div><img class="preview-img" src="./images/14.png" /></div>
                 <div><img class="preview-img" src="./images/12.png" /></div>
             </div>
         </div>
     </div>
-    <!----- test-->
-
-
-
-
-
-
 </body>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.1.4/dist/locomotive-scroll.min.js"></script>
 <script>
     const scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
@@ -107,4 +106,5 @@
         }
     });
 </script>
+
 </html>
