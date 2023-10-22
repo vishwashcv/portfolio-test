@@ -286,6 +286,11 @@ body{
     justify-content: space-between;
 }
 
+.preview-flex{
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
@@ -303,8 +308,7 @@ body{
         align-items: flex-end;
         gap: 34px;
     }
-
-    .width-auto > div:nth-child(-n+3){
+    .width-auto > div:nth-child(-n+1){
         display: none;
     }
     .mobile-button{
@@ -315,6 +319,7 @@ body{
     }
     .center-content{
         gap: 10px;
+        margin-bottom: 20%;
     }
     .title{
         font-size: 1.6rem;
@@ -330,6 +335,30 @@ body{
         font-size: 0.8rem;
         align-items: flex-end;
     }
+    .section-two{
+        padding: 0;
+        height: 200vh;
+    }
+    .profile{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+    .profile-about-title{   
+    }
+    .profile-pic{
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .profile-about-para{
+        
+    }
     /* nav:nth-child(1) > div:nth-last-child(-n+4){
         display: flex;
         flex-direction: column;
@@ -339,5 +368,19 @@ body{
     .mobile-flex{
         display: flex;
         flex-direction: column;
+    }
+    .preview-flex{
+        flex-direction: column;
+    }
+    .preview-img{
+        width: 100vw;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .section{
+        min-height: 100vh;
     }
 }
