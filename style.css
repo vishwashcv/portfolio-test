@@ -422,12 +422,11 @@ body {
     }
     .footer-lets-talk {
         font-size: 3rem;
+        min-height: 30vh;
     }
-
     .role {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
-
     .name {
         font-size: 1.3rem;
     }
@@ -438,5 +437,8 @@ body {
 @media only screen and (max-width: 375px) {
     .section {
         min-height: 100vh;
+    }
+    .footer-lets-talk {
+        font-size: 2.6rem;
     }
 }
