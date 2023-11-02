@@ -9,14 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
     <title>Vishwash</title>
 </head>
 
 <body>
-    <div class="smoothing" data-scroll-container> 
-        <div class="section" data-scroll-section>
-            <nav class="f-nav" data-scroll>
+    <main class="smoothing"> 
+        <div class="section">
+            <nav class="f-nav">
                 <div>Vishwash</div>
                 <div class="flex width-auto">
                     <div>Researcher<br />2022</div>
@@ -25,13 +24,13 @@
                     <div class="button mobile-button">LET'S TALK</div>
                 </div>
             </nav>
-            <div class="center-content" data-scroll data-scroll-speed="3">
+            <div class="center-content">
                 <div class="title">UI / UX Designer</div>
                 <div class="sub-title">Hello, I am Vishwash <br /> Through research I create cool designs</div>
-                <div class="button">SCROLL DOWN TO EXPLORE<div class="arrow">↓</div>
+                <div class="button" onclick="scrolldiv()">SCROLL DOWN TO EXPLORE<div class="arrow">↓</div>
                 </div>
             </div>
-            <nav class="s-nav" data-scroll>
+            <nav class="s-nav">
                 <div>©2023</div>
                 <div>LOCATION<br />N 9.905257 E 78.130842</div>
                 <div class="social">
@@ -41,8 +40,8 @@
                 </div>
             </nav>
         </div>
-        <div class="section-two" data-scroll-section>
-            <div class="profile" data-scroll>
+        <div class="section-two">
+            <div class="profile">
                 <img class="profile-pic" src="./images/profile-pic.png" />
                 <div class="profile-about">
                     <div class="profile-about-title">ABOUT</div>
@@ -50,7 +49,7 @@
                         Marketing, Art Direction and Hardware domains in various industries.</div>
                 </div>
             </div>
-            <div class="profile-sub-about" data-scroll>
+            <div class="profile-sub-about">
                 <div class="line"></div>
                 <div>ncasdfio, aiosdhfuisdhfi, knSDciasofji, jncies I am a Software Engineer,
                     explored Design, Development, Testing, Marketing, Art Direction and Hardware domains in various
@@ -60,7 +59,7 @@
                     Testing, Marketing, Art Direction and Hardware domains in various industries.</div>
                 <div class="line"></div>
             </div>
-            <div class="profile-sub-about" data-scroll>
+            <div class="profile-sub-about">
                 <div>I am a Software Engineer, explored Design, Development, Testing, Marketing, Art Direction and
                     Hardware domains in various industries.</div>
                 <div class="line"></div>
@@ -68,33 +67,33 @@
                     Hardware domains in various industries.</div>
             </div>
         </div>
-        <div class="section-three" data-scroll-section="">
-            <div class="preview-flex" data-scroll>
+        <div class="section-three" id="ele">
+            <div class="preview-flex">
                 <div><img class="preview-img" src="./images/1.png" /></div>
                 <div><img class="preview-img" src="./images/2.png" /></div>
             </div>
-            <div class="preview-flex" data-scroll>
+            <div class="preview-flex">
                 <div><img class="preview-img" src="./images/3.png" /></div>
                 <div><img class="preview-img" src="./images/5.png" /></div>
             </div>
-            <div class="preview-flex" data-scroll>
+            <div class="preview-flex">
                 <div><img class="preview-img" src="./images/4.png" /></div>
                 <div><img class="preview-img" src="./images/8.png" /></div>
             </div>
-            <div class="preview-flex" data-scroll>
+            <div class="preview-flex">
                 <div><img class="preview-img" src="./images/16.png" /></div>
                 <div><img class="preview-img" src="./images/7.png" /></div>
             </div>
-            <div class="preview-flex" data-scroll>
+            <div class="preview-flex">
                 <div><img class="preview-img" src="./images/15.png" /></div>
                 <div><img class="preview-img" src="./images/10.png" /></div>
             </div>
-            <div class="preview-flex" data-scroll>
+            <div class="preview-flex">
                 <div><img class="preview-img" src="./images/14.png" /></div>
                 <div><img class="preview-img" src="./images/12.png" /></div>
             </div>
         </div>
-        <div class="section-four" data-scroll-section="">
+        <div class="section-four">
             <div class="experience">EXPERIENCE</div>
             <div class="space"></div>
             <div>
@@ -125,7 +124,7 @@
               <div class="big">Creative Designer</div>
               <div class="para">Freelance | The White Space | Advertising Services</div>
               <div class="para">Mumbai, Maharashtra, India (Remote)</div>
-              <div class="para">April 2023 - June 2023</div>
+              <divclass="para">April 2023 - June 2023</div>
               <div class="para grey">Neha Parihar - Founder of The White Space, is a cherished client who has not only provided me with work opportunities but also made me feel appreciated, akin to a partner or even a romantic connection. Despite her busy schedule managing The White Space, she continues to support me till now, albeit with occasional minor misunderstandings.</div>
             </div>
             <div class="space"></div>
@@ -147,27 +146,26 @@
                 Jaswanth Kumar - Creative Head of Apixes, supported and understood my youth, recognizing my skills. He assigned various creative projects, from album design to graphic works, in a high-pressure work environment.</div>
             </div>
           </div>
-          <div class="footer" data-scroll-section="">
+          <div class="footer">
             <div id="t-mail" class="footer-lets-talk ">LET'S TALK</div>
             <div class="footer-bottom">
             <div class="des">
-              <div class="small2">Designed and Developed by</div>
-              <div class="big2">Vishwash CV</div>
+              <div class="role">Designed and Developed by</div>
+              <div class="name">Vishwash CV</div>
+            </div>
+            <div class="social">
+                    <div class="link">BEHANCE</div>
+                    <div class="link">LINKEDIN</div>
+                    <div class="link">GITHUB</div>
             </div>
             <div onclick="window.scrollTo(0, 0);" class="back-to-top button">BACK TO TOP</div>
           </div>
-          </div>
-    </div>
+    </main>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.1.4/dist/locomotive-scroll.min.js"></script>
 <script>
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        smartphone: {
-            smooth: true
-        }
-    });
+    function scrolldiv() {
+    var elem = document.getElementById("ele");
+    elem.scrollIntoView();
+};
 </script>
-
 </html>
