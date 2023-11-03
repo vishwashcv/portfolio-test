@@ -22,7 +22,7 @@
                     <div>Researcher<br />2022</div>
                     <div>Software Engineer<br />2022</div>
                     <div>Hardware Engineer<br />2023</div>
-                    <div class="button mobile-button">LET'S TALK</div>
+                    <div class="button mobile-button" onclick="mail()">LET'S TALK</div>
                 </div>
             </nav>
             <div class="center-content">
@@ -35,9 +35,9 @@
                 <div>©2023</div>
                 <div>LOCATION<br />N 9.905257 E 78.130842</div>
                 <div class="social">
-                    <div class="link">BEHANCE</div>
-                    <div class="link">LINKEDIN</div>
-                    <div class="link">GITHUB</div>
+                    <div class="link" onclick="behance();">BEHANCE</div>
+                    <div class="link" onclick="linkedin();">LINKEDIN</div>
+                    <div class="link" onclick="github();">GITHUB</div>
                 </div>
             </nav>
         </div>
@@ -172,16 +172,16 @@
             </div>
         </div>
         <div class="footer">
-            <div id="t-mail" class="footer-lets-talk ">LET'S TALK</div>
+            <div id="t-mail" class="footer-lets-talk" onclick="mail();">LET'S TALK</div>
             <div class="footer-bottom">
                 <div class="des">
                     <div class="role">Designed and Developed by</div>
                     <div class="name">Vishwash CV</div>
                 </div>
                 <div class="social">
-                    <div class="link-bottom">BEHANCE</div>
-                    <div class="link-bottom">LINKEDIN</div>
-                    <div class="link-bottom">GITHUB</div>
+                    <div class="link-bottom" onclick="behance();">BEHANCE</div>
+                    <div class="link-bottom" onclick="linkedin();">LINKEDIN</div>
+                    <div class="link-bottom" onclick="github();">GITHUB</div>
                 </div>
                 <div onclick="window.scrollTo(0, 0);" class="back-to-top button">BACK TO TOP</div>
             </div>
@@ -191,6 +191,18 @@
     function scrolldiv() {
         var elem = document.getElementById("ele");
         elem.scrollIntoView();
+    };
+    function mail(){
+        location.href = 'mailto: vishwashclever@gmail.com';
+    };
+    function behance(){
+        location.href = "https://www.behance.net/vishwashcv";
+    };
+    function linkedin(){
+        location.href = "https://www.linkedin.com/in/vishwashcv1";
+    };
+    function github(){
+        location.href = "https://www.github.com/vishwashcv";
     };
 </script>
 
